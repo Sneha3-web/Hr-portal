@@ -2070,7 +2070,7 @@ if (fs.existsSync(clientDist)) {
   });
 }
 
-if (require.main === module && !process.env.VERCEL) {
+if (require.main === module) {
   const server = app.listen(PORT, () => {
     console.log(`HR Portal Server running on http://localhost:${PORT}`);
   });
