@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Data Analyst",
+    "count": 5
+  },
+  {
+    "name": "Full Stack Developer",
+    "count": 17
+  },
+  {
+    "name": "Devops",
+    "count": 12
+  },
+  {
+    "name": "Python Developer",
+    "count": 7
+  },
+  {
+    "name": "Frontend Developer",
+    "count": 2
+  },
+  {
+    "name": "Java Developer",
+    "count": 10
+  },
+  {
+    "name": "Others",
+    "count": 3
+  },
+  {
+    "name": "Machine Learning",
+    "count": 1
+  },
+  {
+    "name": "React.js Developer",
+    "count": 3
+  },
+  {
+    "name": "Testing Role",
+    "count": 1
+  }
+]

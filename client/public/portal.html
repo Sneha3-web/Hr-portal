@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>globalMINDS Direct Hiring – Boss & Candidate Setup</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--ink:#0a0a0c;--ld:#23252d;--md:#9a9eab;--blue:#ffffff;--blue2:rgba(255,255,255,0.4);
+--page:#0c0d10;--card:#14151a;--text:#f3f4f7;--muted:#a3a7b4;--line:#2a2c35;--chip:#1f2128;--sel:rgba(255,255,255,0.1);--btn:#ffffff;--btntext:#09090b;--dis:#4a4c55;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{margin:0;height:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page);color:var(--text);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:20}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid #ffffff;outline-offset:2px}
+.top{flex:none;display:flex;align-items:center;gap:14px;height:64px;padding:0 24px;background:var(--ink);border-bottom:1px solid var(--ld);color:#f3f4f7}
+.home{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:99px;border:1px solid var(--ld);background:#16171d;color:#f3f4f7;font-size:14px;font-weight:600;text-decoration:none}
+.home:hover{background:#23252d}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.02em;color:#fff}.logo b{color:#ffffff}
+.crumb{color:var(--md);font-size:14px}.sp{flex:1}
+.seg{display:inline-flex;padding:3px;border-radius:99px;background:#16171d;border:1px solid var(--ld)}
+.seg button{height:32px;padding:0 16px;border-radius:99px;font-size:13px;font-weight:600;color:var(--md);transition:all .15s}
+.seg [aria-pressed="true"]{background:#ffffff;color:#09090b;font-weight:700}
+.stage{flex:1;display:flex;justify-content:center;align-items:center;padding:24px;min-height:0}
+.app{position:relative;width:100%;max-width:520px;background:var(--card);border-radius:28px;border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.prog{height:4px;background:rgba(255,255,255,.08)}.prog i{display:block;height:100%;width:0;background:#ffffff;box-shadow:0 0 10px rgba(255,255,255,.6);transition:width .3s}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;min-height:64px}
+.circle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.circle:hover{background:rgba(255,255,255,.12)}
+.exit{height:38px;padding:0 18px;border:1px solid var(--line);border-radius:99px;font-weight:600;font-size:14px;color:var(--muted)}
+.exit:hover{background:var(--chip);color:#fff}
+.body{flex:1;overflow:auto;padding:4px 28px 20px;display:flex;flex-direction:column}
+h1{margin:6px 0 8px;text-align:center;font-size:clamp(23px,3.2vw,28px);line-height:1.25;letter-spacing:-.02em;font-weight:800;color:#fff}
+.sub{margin:0 0 20px;text-align:center;color:var(--muted);font-size:15px}
+.foot{padding:16px 28px 24px}
+.cta{width:100%;height:52px;border-radius:99px;background:#ffffff;color:#09090b;font-weight:700;font-size:16px;transition:all .15s}
+.cta:hover:not(:disabled){background:#f4f4f5;transform:translateY(-1px)}
+.cta:disabled{background:var(--dis);color:#71717a;cursor:not-allowed}
+.step[hidden]{display:none}
+/* options */
+.opts{margin-top:12px}
+.opt{display:flex;align-items:center;justify-content:space-between;padding:18px 8px;border-bottom:1px solid var(--line);font-size:17px;cursor:pointer;transition:all .15s}
+.opt:hover{color:#fff;background:rgba(255,255,255,.03);border-radius:12px;padding-left:12px;padding-right:12px}
+.opt input{position:absolute;opacity:0}
+.rd{width:24px;height:24px;border-radius:50%;border:2px solid rgba(255,255,255,.35);display:grid;place-items:center;transition:all .15s}
+.rd::after{content:"";width:12px;height:12px;border-radius:50%;background:#ffffff;transform:scale(0);transition:transform .15s}
+.opt:has(input:checked) .rd{border-color:#ffffff}.opt:has(input:checked) .rd::after{transform:scale(1)}
+/* chips */
+.search{display:flex;align-items:center;gap:10px;height:50px;padding:0 18px;border:1.5px solid var(--line);border-radius:99px;margin-bottom:16px;background:rgba(255,255,255,.03)}
+.search input{flex:1;border:0;background:none;font:inherit;color:#fff;outline:0;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{min-height:74px;padding:14px 16px;border:1.5px solid var(--line);border-radius:16px;text-align:left;font-size:15px;line-height:1.35;background:var(--card);color:#d4d4d8;transition:all .15s}
+.tile:hover{border-color:rgba(255,255,255,.3);color:#fff}.tile[aria-pressed="true"]{border-color:#ffffff;background:var(--sel);color:#fff;font-weight:700}
+.link{align-self:center;margin-top:14px;padding:9px 18px;border-radius:99px;background:var(--chip);border:1px solid var(--line);font-size:13px;font-weight:500;color:var(--muted)}
+.link:hover{background:rgba(255,255,255,.1);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:11px 18px;border:1.5px solid var(--line);border-radius:99px;font-size:15px;background:var(--card);color:#d4d4d8;transition:all .15s}
+.chip:hover{border-color:rgba(255,255,255,.3);color:#fff}.chip[aria-pressed="true"]{border-color:#ffffff;background:#ffffff;color:#09090b;font-weight:700}
+.chip.add{background:var(--chip);border-color:transparent;color:var(--muted)}
+.brief{margin-top:auto;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:14px;color:var(--muted)}
+.brief b{display:block;color:#fff;font-weight:700;margin-bottom:4px}
+/* experience */
+.big{margin:32px 0 4px;text-align:center;font-size:72px;font-weight:800;letter-spacing:-.03em;line-height:1;color:#fff}
+.unit{text-align:center;font-size:22px;color:var(--muted);margin-bottom:52px}
+.rng{position:relative;height:36px;margin:0 6px}
+.rng .tr{position:absolute;left:0;right:0;top:15px;height:6px;border-radius:9px;background:rgba(255,255,255,.15)}
+.rng .fill{position:absolute;top:15px;height:6px;border-radius:9px;background:#ffffff;box-shadow:0 0 8px rgba(255,255,255,.5)}
+.rng input{position:absolute;inset:0;width:100%;margin:0;background:none;pointer-events:none;-webkit-appearance:none;appearance:none}
+.rng input::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:28px;height:28px;border-radius:50%;background:#fff;border:5px solid var(--card);cursor:grab}
+.ends{display:flex;justify-content:space-between;color:var(--muted);margin:8px 6px 0;font-size:14px}
+/* dial */
+.dial{position:relative;width:min(270px,70vw);aspect-ratio:1;margin:24px auto;border-radius:50%;background:linear-gradient(135deg,#1c1d24,#121317);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.12),0 16px 36px rgba(0,0,0,.4);touch-action:none;cursor:pointer}
+.dial .in{position:absolute;inset:18%;border-radius:50%;background:#16171d;box-shadow:0 10px 24px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.dial .in strong{font-size:64px;line-height:1;font-weight:800;color:#fff}.dial .in span{font-weight:700;font-size:18px;margin-top:4px;color:var(--muted)}
+.knob{position:absolute;width:22%;height:11%;margin:-5.5% 0 0 -11%;border-radius:99px;background:#ffffff;display:flex;align-items:center;justify-content:flex-end;padding-right:2%}
+.knob i{width:60%;aspect-ratio:1;border-radius:50%;background:#14151a}
+/* finding */
+.find{align-items:center;text-align:center;padding-top:16px}
+.stack{position:relative;height:180px;width:250px;margin:24px 0 10px}
+.ph{position:absolute;width:108px;height:124px;border-radius:18px;border:2px solid rgba(255,255,255,.2);box-shadow:0 10px 28px rgba(0,0,0,.5);filter:blur(2px);top:26px}
+.ph:nth-child(1){left:0;transform:rotate(-9deg);background:linear-gradient(160deg,#3f3f46,#18181b)}
+.ph:nth-child(2){left:70px;top:6px;z-index:2;background:linear-gradient(160deg,#52525b,#27272a)}
+.ph:nth-child(3){right:0;transform:rotate(9deg);background:linear-gradient(160deg,#71717a,#3f3f46)}
+.mag{position:absolute;left:58px;bottom:0;font-size:44px;z-index:3}
+.pb{display:flex;align-items:center;gap:12px;width:100%;margin-top:20px}
+.pb div{flex:1;height:8px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden}.pb i{display:block;height:100%;width:0;background:#ffffff;border-radius:9px;box-shadow:0 0 10px rgba(255,255,255,.6)}
+.eta{display:flex;gap:14px;margin:16px 0 20px;font-size:14px;color:var(--muted)}.eta b{color:#fff}
+.match{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03);text-align:left}
+.match small{display:block;color:var(--muted);margin-top:2px}.ok{color:#10b981;font-weight:700;white-space:nowrap}
+/* dashboard */
+.dash{padding:0}
+.jobs{display:flex;gap:10px;align-items:center;padding:8px 18px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.job{position:relative;padding:9px 18px;border-radius:99px;background:#ffffff;color:#09090b;font-weight:700;font-size:14px}
+.job::after{content:"";position:absolute;top:3px;right:3px;width:8px;height:8px;border-radius:50%;background:#ef4444}
+.addj{font-size:14px;font-weight:600;padding:8px 12px;color:var(--muted);border-radius:99px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.addj:hover{color:#fff;background:rgba(255,255,255,.12)}
+.cand{position:relative;flex:1;margin:12px 16px;border-radius:24px;overflow:hidden;background:#1a1b22;border:1px solid var(--line);display:flex;flex-direction:column;min-height:400px}
+.pho{height:200px;background:linear-gradient(160deg,#27272a,#18181b);display:grid;place-items:center;font-size:56px;font-weight:800;color:#fff}
+.cd{background:var(--card);margin-top:-20px;border-radius:22px 22px 0 0;padding:18px 20px;text-align:center;flex:1;position:relative}
+.cd h3{margin:0;font-size:22px;font-weight:800;color:#fff}.cd p{margin:4px 0;color:var(--muted);font-size:14px}
+.want{margin:10px 0;padding:10px 0;border-block:1px solid var(--line);font-size:15px;color:#fff;font-weight:600}
+.acts{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-around;background:#09090b;border:1px solid rgba(255,255,255,.12);border-radius:99px;padding:10px 8px;z-index:2;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.acts button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;padding:2px 10px;color:#d4d4d8}.acts span{font-size:20px}
+.tabs{display:flex;justify-content:space-around;padding:10px 6px 12px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#71717a;background:var(--card)}
+.tabs div{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}.tabs span{font-size:20px}.tabs .on{color:#fff;font-weight:700}
+/* modal */
+.modal{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal[hidden]{display:none}
+.sheet{width:100%;max-width:440px;max-height:94vh;overflow-y:auto;background:#111217;color:#f3f4f7;border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:26px;text-align:center;position:relative;box-shadow:0 28px 72px rgba(0,0,0,.7)}
+.sheet .x{position:absolute;right:16px;top:16px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);font-size:18px;color:#cfd2da;display:grid;place-items:center}
+.sheet .x:hover{background:rgba(255,255,255,.15);color:#fff}
+.sheet small{letter-spacing:.2em;color:var(--muted);font-weight:700;font-size:12px}
+.sheet h2{font-size:42px;margin:6px 0;font-weight:800;letter-spacing:-.025em;color:#fff}.sheet h2 span{color:#d4d4d8;font-weight:400}
+.sheet h3{font-size:20px;font-weight:700;margin:0 0 6px;color:#fff}.sheet .s{color:var(--muted);margin:0 0 18px;font-size:14px}
+.ft{background:#1a1b22;border-radius:20px;padding:10px;text-align:left;display:grid;gap:6px;margin-bottom:16px}
+.ft div{padding:10px 12px;border-radius:12px;display:flex;gap:12px;align-items:center;font-size:14.5px;color:#f3f4f7}.ft div:first-child{background:rgba(255,255,255,.08)}
+.ft i{flex:none;width:20px;height:20px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:12px;font-weight:800;font-style:normal}
+.ref{display:flex;align-items:center;gap:14px;text-align:left;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);border-radius:18px;padding:14px;margin-bottom:18px;font-size:14px;color:#d4d4d8}
+.ref b{flex:none;width:40px;height:40px;border-radius:12px;background:#fff;color:#000;display:grid;place-items:center;font-weight:800;font-size:15px}
+.pr{display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left}
+.pr s{color:#71717a;font-size:13px;display:block}.pr strong{display:block;font-size:30px;color:#fff;font-weight:800}.pr em{color:#10b981;font-size:13px;font-style:normal;font-weight:700;margin-left:6px}.pr small{display:block;letter-spacing:0;font-weight:500;color:var(--muted);font-size:12px}
+.get{height:48px;padding:0 24px;border-radius:99px;background:#ffffff;color:#09090b;font-weight:700;font-size:15px;white-space:nowrap}
+.get:hover{background:#f4f4f5}
+
+/* Candidate Specific Rules */
+.vis{margin-top:auto;padding-top:20px;display:flex;gap:10px;align-items:center;color:var(--muted);font-size:15px}
+.rd.sq{border-radius:8px}.rd.sq::after{border-radius:3px}
+.loc{display:flex;justify-content:space-between;align-items:center;width:100%;padding:14px 6px;border-bottom:1px solid var(--line);text-align:left;font-size:17px;color:#f3f4f7}
+.loc:hover{background:rgba(255,255,255,.04);color:#fff}.loc b{display:block;font-weight:600}.loc small{color:var(--muted);font-size:14px}.loc i{font-style:normal;color:var(--muted);font-size:22px}.loc.on{background:var(--sel)}
+.zone{display:flex;flex-direction:column;align-items:center;gap:14px;padding:56px 20px;border:2px dashed rgba(255,255,255,.2);border-radius:22px;width:100%;text-align:center;font-size:18px;color:#fff}
+.zone:hover{border-color:rgba(255,255,255,.4);background:var(--chip)}
+.zone small{font-size:14px;color:var(--muted)}.zone em{font-style:normal;padding:4px 10px;border-radius:8px;background:var(--sel);margin:0 2px}
+.addin{margin-top:14px;height:48px;padding:0 18px;border:1.5px solid var(--line);border-radius:99px;background:rgba(255,255,255,.03);color:#fff;font:inherit;width:100%;box-sizing:border-box}
+.addin:focus{border-color:#ffffff}
+.pho{position:relative}.ago{position:absolute;left:14px;bottom:14px;padding:4px 12px;border-radius:99px;background:#fff;color:#111;font-size:12px;font-weight:700}
+.lock{font-weight:700;font-size:17px;color:#fff;border-bottom:1px solid var(--line);padding-bottom:10px}.lock small{display:block;font-weight:500;color:var(--muted);font-size:13px;margin-top:4px}
+.jd{text-align:left;margin-top:14px;padding-top:10px}.jd h3{margin:4px 0;font-size:22px;color:#fff}.jd p{margin:4px 0;color:var(--muted)}
+.facts{display:flex;justify-content:space-between;margin-top:14px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}.facts b{display:block;color:var(--text);font-size:16px}
+.cact{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:2}.cact .xc{width:52px;height:52px;border-radius:50%;background:#09090b;border:1px solid rgba(255,255,255,.2);color:#ef4444;font-size:22px}.cact .ap{height:52px;padding:0 24px;border-radius:99px;background:#ffffff;color:#09090b;font-weight:700;font-size:15px;flex:1}
+.modes{display:grid;gap:14px;margin-top:18px}.mode{position:relative;display:block;text-align:left;padding:26px 24px;border-radius:24px;min-height:124px;overflow:hidden;transition:transform .15s}.mode:hover{transform:translateY(-2px)}
+.mode b{display:block;font-size:26px;letter-spacing:-.02em}.mode span{font-size:15px;opacity:.85}.mode i{position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:64px;font-style:normal}
+.mode.dk{background:linear-gradient(135deg,#1b1b1f,#050506);color:#fff}.mode.lt{background:linear-gradient(135deg,#efece4,#e5e0d4);color:#151515}
+.ps{margin-top:auto;text-align:center;color:var(--muted);font-weight:600;padding-top:24px}.pb i{transition:width 1s linear}
+@media(max-width:700px){.top{padding:0 12px;gap:8px}.crumb,.home span{display:none}.stage{padding:12px 8px}.app{border-radius:20px}.logo{font-size:19px}.seg button{padding:0 10px}.sheet h2{font-size:36px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="home" href="/" aria-label="Back to Global Minds home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Global Minds home</span></a>
+  <div class="logo">global<b>MINDS</b></div><div class="crumb">Direct Hiring</div><div class="sp"></div>
+  <div class="seg" role="group" aria-label="Mode"><button type="button" aria-pressed="true">Boss</button><button type="button" aria-pressed="false">Candidate</button></div>
+</header>
+<div class="stage"><main class="app" id="app">
+  <div class="prog"><i id="pg"></i></div>
+  <div class="nav"><button class="circle" id="back" aria-label="Back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button><button class="exit" id="exit">Exit</button></div>
+
+  <!-- BOSS MODE STEPS -->
+  <section class="step body" data-s="0"><h1>What brings you here as a boss?</h1>
+    <fieldset style="border:0;padding:0;margin:0" class="opts"><legend style="position:absolute;left:-9999px">Goal</legend>
+      <label class="opt">I or my team are hiring<input type="radio" name="g" value="hire"><span class="rd"></span></label>
+      <label class="opt">I can refer people to my company<input type="radio" name="g" value="ref"><span class="rd"></span></label>
+      <label class="opt">I’m not hiring right now<input type="radio" name="g" value="none"><span class="rd"></span></label>
+    </fieldset></section>
+
+  <section class="step body" data-s="1" hidden><h1>Which job title should we search talent for?</h1>
+    <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Search talent type" aria-label="Search talent type"></label>
+    <div class="grid" id="titles"></div><button class="link" id="own">Role not listed? Add your own</button></section>
+
+  <section class="step body" data-s="2" hidden><h1>What kind of experience would you look at?</h1>
+    <div class="big" id="ev">2 – 4</div><div class="unit">Years</div>
+    <div class="rng"><div class="tr"></div><div class="fill" id="fl"></div><input type="range" id="r1" min="0" max="30" value="2" aria-label="Minimum years"><input type="range" id="r2" min="0" max="30" value="4" aria-label="Maximum years"></div>
+    <div class="ends"><span>0 Years</span><span>30+ Years</span></div></section>
+
+  <section class="step body" data-s="3" hidden><h1>Minimum CTC</h1>
+    <div class="dial" id="dial" role="slider" tabindex="0" aria-label="Minimum CTC in lakhs per annum" aria-valuemin="1" aria-valuemax="60" aria-valuenow="10"><div class="in"><strong id="cv">10</strong><span>LPA</span></div><div class="knob" id="kn"><i></i></div></div>
+    <p class="sub">Drag the dial or use the arrow keys.</p></section>
+
+  <section class="step body" data-s="4" hidden><h1>What skills should they already have?</h1><p class="sub">Tap the ones you’d expect to see on their profile.</p>
+    <div class="chips" id="skills"></div>
+    <div class="brief"><b>Your brief so far</b><span id="brief"></span></div></section>
+
+  <section class="step body find" data-s="5" hidden><h1>Finding the right talent for you!</h1>
+    <div class="stack"><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="mag">🔍</div></div>
+    <div class="pb"><div><i id="fb"></i></div><span id="fp">0%</span></div>
+    <div class="eta"><span>ETA: <b id="et">9 secs</b></span><span>Finding the right matches for you</span></div>
+    <div class="match"><div>Figuring out the candidates that match your criteria<small id="mn">&nbsp;</small></div><span class="ok" id="mk"></span></div></section>
+
+  <section class="step body dash" data-s="6" hidden>
+    <div class="jobs"><span class="job" id="jt">Software Developer</span><button class="addj" id="addj">+ Add job</button></div>
+    <div class="cand"><div class="pho">AK</div><div class="cd"><h3>Aarav Kumar</h3><p>Member of Technical Staff</p><p>📍 Bengaluru</p><div class="want">👋 Wants to work with you</div><p>🟢 Active today · Exp CTC 10L</p></div>
+      <div class="acts"><button><span style="color:#ef4444">✕</span>Reject</button><button style="opacity:.6"><span>→</span>Skip</button><button><span style="color:#ffffff">▤</span>Ask resume</button><button><span style="color:#10b981">💬</span>Reply</button></div></div>
+    <div class="tabs"><div class="on"><span>◎</span>Find talent</div><div><span>👋</span>Reach outs</div><div><span>💬</span>Chat</div><div><span>◆</span>Select</div><div><span>≡</span>You</div></div></section>
+
+  <!-- CANDIDATE MODE STEPS -->
+  <section class="step body" hidden><h1>Choose your mode</h1><div class="modes"><button type="button" class="mode dk" id="mb"><b>Boss mode</b><span>I’m hiring or may hire soon ›</span><i>💼</i></button><button type="button" class="mode lt" id="mt"><b>Talent mode</b><span>I am looking for jobs ›</span><i>✦</i></button></div><p class="ps">P.S. You can always switch later</p></section>
+  <section class="step body" hidden><h1>Select your target job function</h1><div id="fn"></div></section>
+  <section class="step body" hidden><h1>How many years of experience do you have?</h1><div class="big" id="yv">3.0</div><div class="unit">Years</div><div class="rng"><div class="tr"></div><div class="fill" id="yf" style="left:0"></div><input type="range" id="yr" min="0" max="15" step="0.5" value="3" aria-label="Years of experience"></div><div class="ends"><span>0 Years</span><span>15+ Years</span></div><div class="vis">👁 Visible on your profile</div></section>
+  <section class="step body" hidden><h1>Add your locality so we can show jobs near you</h1><label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="lq" placeholder="Search location" aria-label="Search location"></label><div id="ll"></div></section>
+  <section class="step body" hidden><h1>What’s your current CTC?</h1><div class="dial" id="d1" tabindex="0" role="slider" aria-label="Current CTC in lakhs per annum" aria-valuemin="1" aria-valuemax="60" aria-valuenow="10"><div class="in"><strong>10</strong><span>LPA</span></div><div class="knob"><i></i></div></div><div class="vis">🙈 Hidden on your profile</div></section>
+  <section class="step body" hidden><h1>What’s your expected CTC?</h1><div class="dial" id="d2" tabindex="0" role="slider" aria-label="Expected CTC in lakhs per annum" aria-valuemin="1" aria-valuemax="60" aria-valuenow="15"><div class="in"><strong>15</strong><span>LPA</span></div><div class="knob"><i></i></div></div><div class="vis">👁 Visible on your profile</div></section>
+  <section class="step body" hidden><h1>What’s your AI stack?</h1><p class="sub">This is the signal bosses love in 2026. Pick up to 6.</p><label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="sq" placeholder="Search products" aria-label="Search products"></label><div class="chips" id="st"></div></section>
+  <section class="step body" hidden><h1>Which skills do you want to use?</h1><p class="sub">Tap the ones you want to use every day.</p><div class="chips" id="cs"></div><input class="addin" id="cx" placeholder="+ Something else, then press Enter" aria-label="Add a skill"><div class="brief" style="margin-top:20px"><b>Your job search so far</b><span id="cb"></span></div></section>
+  <section class="step body" hidden><h1>Add your resume to activate AI matching</h1><p class="sub">A slightly old one is fine too</p><button type="button" class="zone" id="zone"><span style="font-size:34px">⬆</span><strong>Tap to select resume</strong><small>Supported formats: <em>PDF</em> <em>DOCX</em> · Max file size: <em>5MB</em></small></button><input type="file" id="file" accept=".pdf,.docx" hidden><p class="sub" id="fm" role="status" style="margin-top:16px"></p></section>
+  <section class="step body find" hidden><h1>Your job stack is ready!</h1><p class="sub" id="rt">Taking you there in 3…</p><div class="stack"><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="mag">🔍</div></div><div class="pb"><div><i id="rb"></i></div><span>100%</span></div></section>
+  <section class="step body dash" hidden>
+    <div class="cand" style="margin-top:14px"><div class="pho" style="height:200px">EL<span class="ago">● 5d ago</span></div>
+    <div class="cd"><div class="lock">🔒 Unlock with Intro<small>To apply for this role, complete the intro call.</small></div>
+    <div class="jd"><span>👋 Hiring</span><h3>Founding AI Engineer</h3><p>Example Labs</p><p>I’m hiring for Engineering. I am looking for a Founding AI Engineer to build… <u>See more</u></p><p>📍 Bengaluru</p>
+    <div class="facts"><div><b>₹40–70 LPA</b>CTC</div><div><b>5–15 yrs</b>Experience</div><div><b>WFO</b>Work mode</div></div></div></div>
+    <div class="cact"><button class="xc" aria-label="Skip this job">✕</button><button class="ap">Apply with intro</button></div></div>
+    <div class="tabs"><div class="on"><span>◎</span>Find jobs</div><div><span>💬</span>Chat</div><div id="sw" role="button" tabindex="0"><span>⇄</span>Switch</div><div><span>▶</span>Interview</div><div><span>≡</span>You</div></div></section>
+
+  <div class="foot" id="foot"><button class="cta" id="cta" disabled>Continue</button></div>
+</main></div>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Upgrade to Boss Plus"><div class="sheet">
+  <button class="x" id="mx" aria-label="Close">✕</button><small>UPGRADE</small><h2>BOSS<span>Plus</span></h2>
+  <h3>You’ve reached your live role limit</h3><p class="s">1 of 1 roles live · the first one is free forever</p>
+  <div class="ft"><div><i>✓</i>3 roles live at the same time</div><div><i>✓</i>2x Reachouts with no daily limit</div><div><i>✓</i>2x Open chats at a time</div><div><i>✓</i>Your roles shown first to matching people</div><div><i>✓</i>Frontier models used for matching</div></div>
+  <div class="ref"><b>gM</b><span>Refer a boss, you’ll both get Boss Plus free for a month</span></div>
+  <div class="pr"><div><s>Introductory price ₹9,999</s><strong>₹4,999 <em>50% off</em></strong><small>For 30 days, doesn’t auto renew</small></div><button class="get">Get Boss Plus</button></div>
+</div></div>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},steps=[].slice.call(document.querySelectorAll('.step')),cur=0,hist=[];
+var D={goal:'',title:'',exp:[2,4],ctc:10,skills:[]};
+var titles=['Localization Engineer','Software Localization Engineer','Linguistic Engineer','Technical Project Manager','Engineering Program Manager','Translation Tools Engineer','Internationalization Engineer','QA Engineer','Release Manager'];
+var skills=['Jira Administration','Roadmap Planning','Risk Management','Release Management','Process Mapping','ERP Integration','Cloud Architecture','AI Automation'];
+var cta=$('#cta'),foot=$('#foot'),pg=$('#pg'),timer;
+function go(n,push){if(push!==false)hist.push(cur);cur=n;steps.forEach(function(s,i){s.hidden=i!==n});
+ chrome(n);
+ cta.textContent=[4,8,9,11,12,14].indexOf(n)>-1?'Save':'Continue';
+ cta.disabled=(n===0&&!D.goal)||(n===1&&!D.title)||(n>=8&&!ok(n));
+ if(n===5)find();if(n===13||n===14)csync(n);if(n===16)ready();if(n===6)$('#jt').textContent=D.title||'Software Developer';
+ if(n===4)brief();if(n===3)dial(D.ctc);if(n===2)rng();$('#app').scrollTop=0}
+function back(){clearInterval(timer);go(hist.length?hist.pop():0,false)}
+$('#back').onclick=back;$('#exit').onclick=function(){if(cur===15){go(16);return}hist=[];setSeg(null);go(7,false)};
+cta.onclick=function(){if(cta.disabled)return;
+ if(cur===0){go(D.goal==='none'?6:1)}else if(cur===1)go(2);else if(cur===2)go(3);else if(cur===3)go(4);else if(cur===4)go(5);else if(CP.indexOf(cur)>-1)go(CP[CP.indexOf(cur)+1])};
+document.querySelectorAll('input[name=g]').forEach(function(r){r.onchange=function(){D.goal=r.value;cta.disabled=false}});
+/* titles */
+function drawTitles(f){var g=$('#titles');g.innerHTML='';titles.filter(function(t){return t.toLowerCase().indexOf(f.toLowerCase())>-1}).forEach(function(t){var b=document.createElement('button');b.className='tile';b.type='button';b.textContent=t;b.setAttribute('aria-pressed',D.title===t);b.onclick=function(){D.title=t;cta.disabled=false;drawTitles($('#q').value)};g.appendChild(b)})}
+drawTitles('');$('#q').oninput=function(){drawTitles(this.value)};
+$('#own').onclick=function(){var v=$('#q').value.trim();if(v){if(titles.indexOf(v)<0)titles.unshift(v);D.title=v;cta.disabled=false;$('#q').value='';drawTitles('')}else $('#q').focus()};
+/* experience */
+function rng(){var a=+$('#r1').value,b=+$('#r2').value;if(a>b){var t=a;a=b;b=t}D.exp=[a,b];$('#ev').textContent=a+' – '+b+(b>=30?'+':'');
+ $('#fl').style.left=a/30*100+'%';$('#fl').style.right=(100-b/30*100)+'%'}
+$('#r1').oninput=$('#r2').oninput=rng;rng();
+/* dial */
+var dl=$('#dial'),drag=false;
+function dial(v){D.ctc=v;$('#cv').textContent=v;dl.setAttribute('aria-valuenow',v);var a=v/60*2*Math.PI,k=$('#kn');k.style.left=50+41*Math.sin(a)+'%';k.style.top=50-41*Math.cos(a)+'%';k.style.transform='rotate('+(a*180/Math.PI)+'deg)'}
+function pt(e){var r=dl.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2,a=Math.atan2(x,-y);if(a<0)a+=2*Math.PI;dial(Math.max(1,Math.round(a/(2*Math.PI)*60)))}
+dl.onpointerdown=function(e){drag=true;dl.setPointerCapture(e.pointerId);pt(e)};dl.onpointermove=function(e){if(drag)pt(e)};dl.onpointerup=function(){drag=false};
+dl.onkeydown=function(e){if(e.key==='ArrowRight'||e.key==='ArrowUp')dial(Math.min(60,D.ctc+1));if(e.key==='ArrowLeft'||e.key==='ArrowDown')dial(Math.max(1,D.ctc-1))};
+/* skills */
+var sk=$('#skills');
+function drawSkills(){sk.innerHTML='';skills.forEach(function(s){var b=document.createElement('button');b.className='chip';b.type='button';b.textContent=s;b.setAttribute('aria-pressed',D.skills.indexOf(s)>-1);b.onclick=function(){var i=D.skills.indexOf(s);i>-1?D.skills.splice(i,1):D.skills.push(s);drawSkills();brief()};sk.appendChild(b)});
+ var a=document.createElement('button');a.className='chip add';a.type='button';a.textContent='+ Something else';a.onclick=function(){var v=prompt('Add a skill');if(v&&v.trim()){skills.push(v.trim());D.skills.push(v.trim());drawSkills();brief()}};sk.appendChild(a)}
+function brief(){$('#brief').textContent=(D.title||'Your role')+' · '+D.exp[0]+'–'+D.exp[1]+' yrs · ₹'+D.ctc+' LPA+ · '+(D.skills.length?D.skills.join(', '):'Any skills work')}
+drawSkills();
+/* finding */
+function find(){var p=0,n=['Candidate A','Candidate B','Candidate C'],i=0;clearInterval(timer);
+ timer=setInterval(function(){p=Math.min(100,p+4);$('#fb').style.width=p+'%';$('#fp').textContent=p+'%';$('#et').textContent=Math.max(0,Math.ceil((100-p)/11))+' secs';
+  if(p%20===0){$('#mn').textContent=n[i%3]+' · matched your brief';$('#mk').textContent='✓ Matched';i++}
+  if(p>=100){clearInterval(timer);setTimeout(function(){go(6)},500)}},180)}
+/* modal + misc */
+var m=$('#modal');$('#addj').onclick=function(){m.hidden=false;$('#mx').focus()};$('#mx').onclick=function(){m.hidden=true;$('#addj').focus()};
+m.onclick=function(e){if(e.target===m)m.hidden=true};document.onkeydown=function(e){if(e.key==='Escape')m.hidden=true};
+
+/* candidate flow */
+var CP=[8,9,10,11,12,13,14,15,16,17];D.fn=['Engineering'];D.loc='';D.stack=['cursor','claude','chatgpt'];D.cskills=[];D.resume=null;D.cy=3;
+function setSeg(m){document.querySelectorAll('.seg button').forEach(function(b,i){b.setAttribute('aria-pressed',m===(i?'cand':'boss'))})}
+document.querySelectorAll('.seg button').forEach(function(b,i){b.onclick=function(){hist=[7];setSeg(i?'cand':'boss');go(i?8:0,false)}});
+$('#mb').onclick=function(){setSeg('boss');go(0)};$('#mt').onclick=function(){setSeg('cand');go(8)};$('#sw').onclick=function(){setSeg(null);go(7)};
+function chrome(n){var ci=CP.indexOf(n);pg.style.width=(ci>-1?(ci+1)/CP.length*100:n===7?0:n<=4?(n+1)/5*100:100)+'%';
+ foot.hidden=[5,6,7,16,17].indexOf(n)>-1;$('#exit').style.visibility=(n>=5&&n<=7)||n>=16?'hidden':'visible';$('#exit').textContent=n===15?'Skip':'Exit';
+ $('#back').style.visibility=(hist.length&&[5,6,16,17].indexOf(n)<0)?'visible':'hidden'}
+function ok(n){return n===8?D.fn.length>0:n===10?!!D.loc:n===13?D.stack.length>0:n===14?D.cskills.length>0:n===15?!!D.resume:true}
+function csync(n){if(n===13)cta.textContent='Continue ('+D.stack.length+'/6)';cta.disabled=!ok(n);
+ if(n===14)$('#cb').textContent=[D.fn[0]||'Any function',D.cy+' yrs',D.loc||'Any location',D.cskills.length?D.cskills.join(', '):'Any of these works'].join(' · ')}
+var FN=['Engineering','Product Management','Marketing & Growth','Strategy/Generalist','Design','Accounting','Finance','Human Resources','Venture Capital','Legal','Operations','Sales'];
+$('#fn').innerHTML=FN.map(function(f){return '<label class="opt" style="font-size:17px;padding:16px 6px">'+f.replace('&','&amp;')+'<input type="checkbox" value="'+f+'" '+(f==='Engineering'?'checked':'')+'><span class="rd sq"></span></label>'}).join('');
+$('#fn').onchange=function(){D.fn=[].map.call(this.querySelectorAll('input:checked'),function(i){return i.value});csync(8)};
+$('#yr').oninput=function(){D.cy=+this.value;$('#yv').textContent=D.cy>=15?'15+':D.cy.toFixed(1);$('#yf').style.width=D.cy/15*100+'%'};$('#yr').oninput();
+var LOC=[['Bengaluru','Karnataka'],['Chennai','Tamil Nadu'],['Hyderabad','Telangana'],['Pune','Maharashtra'],['Mumbai','Maharashtra'],['Delhi NCR','Delhi'],['Kolkata','West Bengal'],['Remote','Anywhere in India']];
+function drawLoc(){var f=$('#lq').value.toLowerCase(),h='';LOC.forEach(function(l){if(l[0].toLowerCase().indexOf(f)>-1)h+='<button type="button" class="loc'+(D.loc===l[0]?' on':'')+'" data-l="'+l[0]+'"><span><b>'+l[0]+'</b><small>'+l[1]+'</small></span><i>›</i></button>'});$('#ll').innerHTML=h}
+$('#ll').onclick=function(e){var b=e.target.closest('.loc');if(b){D.loc=b.dataset.l;drawLoc();csync(10)}};$('#lq').oninput=drawLoc;drawLoc();
+function mk(el,key,def){var cv=el.querySelector('strong'),kn=el.querySelector('.knob'),dr=false,T=6.2832;
+ function set(v){D[key]=v;cv.textContent=v;el.setAttribute('aria-valuenow',v);var a=v/60*T;kn.style.left=50+41*Math.sin(a)+'%';kn.style.top=50-41*Math.cos(a)+'%';kn.style.transform='rotate('+a*57.2958+'deg)'}
+ function pt(e){var r=el.getBoundingClientRect(),a=Math.atan2(e.clientX-r.left-r.width/2,-(e.clientY-r.top-r.height/2));if(a<0)a+=T;set(Math.max(1,Math.round(a/T*60)))}
+ el.onpointerdown=function(e){dr=true;el.setPointerCapture(e.pointerId);pt(e)};el.onpointermove=function(e){if(dr)pt(e)};el.onpointerup=function(){dr=false};
+ el.onkeydown=function(e){if(e.key==='ArrowRight'||e.key==='ArrowUp')set(Math.min(60,D[key]+1));if(e.key==='ArrowLeft'||e.key==='ArrowDown')set(Math.max(1,D[key]-1))};set(def)}
+mk($('#d1'),'cur',10);mk($('#d2'),'exp2',15);
+function chips(box,arr,key,max,after){var s=D[key];box.innerHTML='';arr.forEach(function(a){var b=document.createElement('button'),on=s.indexOf(a)>-1;b.type='button';b.className='chip';b.textContent=(on?'✓ ':'')+a;b.setAttribute('aria-pressed',on);b.onclick=function(){if(on)s.splice(s.indexOf(a),1);else if(!max||s.length<max)s.push(a);after()};box.appendChild(b)})}
+var AI=['antigravity','claude code','claude','codex','cursor','dalle','deepmind','deepseek','elevenlabs','gemini','gemini cli','github copilot','grok','hugging face','kilo code','kimi','kiro','langchain','chatgpt','perplexity','midjourney','n8n'];
+function drawSt(){var f=$('#sq').value.toLowerCase();chips($('#st'),AI.filter(function(a){return a.indexOf(f)>-1}),'stack',6,function(){drawSt();csync(13)})}$('#sq').oninput=drawSt;drawSt();
+var CS=['Project portfolio management','Resource capacity planning','Workflow automation','KPI dashboarding','Process mapping','Vendor management','Risk and issue management','ServiceNow'];
+function drawCs(){chips($('#cs'),CS,'cskills',0,function(){drawCs();csync(14)})}drawCs();
+$('#cx').onkeydown=function(e){var v=this.value.trim();if(e.key==='Enter'&&v){if(CS.indexOf(v)<0)CS.push(v);if(D.cskills.indexOf(v)<0)D.cskills.push(v);this.value='';drawCs();csync(14)}};
+$('#zone').onclick=function(){$('#file').click()};
+$('#file').onchange=function(){var f=this.files[0],m=$('#fm');if(!f)return;var t=/\.(pdf|docx)$/i.test(f.name);if(!t||f.size>5242880){D.resume=null;m.textContent=!t?'Please choose a PDF or DOCX file.':'That file is over 5MB. Choose a smaller one.'}else{D.resume=f.name;m.textContent='✓ '+f.name}csync(15)};
+function ready(){var c=3;clearInterval(timer);$('#rt').textContent='Taking you there in 3…';$('#rb').style.width='0';timer=setInterval(function(){c--;$('#rb').style.width=(3-c)/3*100+'%';$('#rt').textContent='Taking you there in '+c+'…';if(c<=0){clearInterval(timer);go(17)}},1000)}
+
+// Check URL query parameters
+var qm = new URLSearchParams(window.location.search).get('mode');
+if(qm === 'talent' || qm === 'candidate'){
+  setSeg('cand');
+  go(8, false);
+} else {
+  setSeg('boss');
+  go(0, false);
+}
+})();
+</script>
+</body>
+</html>

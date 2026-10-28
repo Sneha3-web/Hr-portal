@@ -1,0 +1,927 @@
+{
+  "snehasaraswathi1984@gmail.com": {
+    "id": "hr_muz7fcxk",
+    "name": "Sneha V",
+    "email": "snehasaraswathi1984@gmail.com",
+    "phone": "+918056897132",
+    "companyName": "Global",
+    "role": "hr",
+    "lastLoginAt": "2026-10-23T05:37:05.186Z",
+    "searchHistory": [],
+    "viewedCandidates": [
+      {
+        "candidateId": "cand_muz2g8y3_lumxy",
+        "id": "cand_muz2g8y3_lumxy",
+        "candidateName": "Aiswarya G",
+        "name": "Aiswarya G",
+        "category": "Data Analyst",
+        "experience": "1-2 Years",
+        "skills": [
+          "SQL",
+          "Power BI",
+          "Python",
+          "Tableau",
+          "Pandas",
+          "Data Visualization",
+          "NumPy",
+          "Business Intelligence"
+        ],
+        "filename": "Data_Analyst_Aiswarya_G_Data_Analyst_Resume.pdf",
+        "expectedCtc": "₹12-18 LPA",
+        "location": "Chennai",
+        "viewedAt": "2026-10-22T04:58:04.805Z"
+      },
+      {
+        "candidateId": "cand_muz4mu4j_xskxs",
+        "id": "cand_muz4mu4j_xskxs",
+        "candidateName": "Pranjal Mishra",
+        "name": "Pranjal Mishra",
+        "category": "Machine Learning",
+        "experience": "1-2 Years",
+        "skills": [
+          "Python",
+          "Scikit-learn",
+          "Deep Learning",
+          "Pandas",
+          "NumPy",
+          "Git",
+          "REST APIs",
+          "MongoDB"
+        ],
+        "filename": "Machine_Learning_Pranjal_Mishra_BTECH_CSIT_2026.pdf",
+        "expectedCtc": "₹12-18 LPA",
+        "location": "Delhi",
+        "viewedAt": "2026-10-21T08:51:09.413Z"
+      },
+      {
+        "candidateId": "cand_muz4mu05_61698",
+        "candidateName": "Kaviya N",
+        "category": "Devops",
+        "viewedAt": "2026-10-20T05:20:49.101Z"
+      },
+      {
+        "candidateId": "cand_muz4mu0m_mggi7",
+        "candidateName": "Shweta Singh",
+        "category": "Devops",
+        "viewedAt": "2026-10-09T05:45:42.250Z"
+      },
+      {
+        "candidateId": "cand_muz4mtzm_a5dzk",
+        "candidateName": "Akshara Balan",
+        "category": "Devops",
+        "viewedAt": "2026-10-09T05:45:14.052Z"
+      },
+      {
+        "candidateId": "cand_muz4mtzq_tvi40",
+        "candidateName": "Arunbalaji Muthamilselvan",
+        "category": "Devops",
+        "viewedAt": "2026-10-08T07:21:50.186Z"
+      },
+      {
+        "candidateId": "cand_muz4mu1g_wawoa",
+        "candidateName": "Amandeep",
+        "category": "Full Stack Developer",
+        "viewedAt": "2026-10-08T07:21:21.842Z"
+      },
+      {
+        "candidateId": "cand_muz4mtz7_rij8h",
+        "candidateName": "Candidate 339",
+        "category": "Data Analyst",
+        "viewedAt": "2026-10-08T07:20:33.354Z"
+      }
+    ],
+    "lastActiveDomain": "DevOps",
+    "lastSearch": {
+      "id": "search_1792473609181_h1uo",
+      "domain": "DevOps",
+      "domainId": "devops",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "experience_desc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-20T05:20:09.181Z"
+    },
+    "shortlist": [
+      {
+        "id": "cand_muz2g8y3_lumxy",
+        "name": "Aiswarya G",
+        "location": "Chennai",
+        "experience": "1-2 Years",
+        "role": "Data Analyst Engineer",
+        "category": "Data Analyst",
+        "skills": [
+          "SQL",
+          "Power BI",
+          "Python",
+          "Tableau",
+          "Pandas",
+          "Data Visualization",
+          "NumPy",
+          "Business Intelligence"
+        ],
+        "email": "aiswaryagovindharaj365@gmail.com",
+        "phone": "+91 97900 69804",
+        "education": "B.Tech Information Technology (2021)",
+        "passingYear": 2021,
+        "score": 90,
+        "rating": 4.8,
+        "status": "Interview Scheduled",
+        "interviewScheduled": true,
+        "availability": "Immediate (0 - 15 Days)",
+        "college": "",
+        "cgpa": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/aiswarya-govindharaj-339bbb205",
+        "portfolio": "",
+        "source": "Global Minds Technologies",
+        "bio": "Data Analyst with hands-on training in Excel, SQL, Power BI, Python, and",
+        "filename": "Data_Analyst_Aiswarya_G_Data_Analyst_Resume.pdf",
+        "originalFilename": "Aiswarya_G_Data_Analyst_Resume.pdf",
+        "fileType": ".pdf",
+        "uploadedAt": "2026-10-08T04:58:33.675Z",
+        "scheduledCompany": "tcs",
+        "scheduledDate": "2026-10-13",
+        "scheduledSlot": "10:00 AM - 10:45 AM",
+        "scheduledAt": "2026-10-12T12:20:59.205Z"
+      }
+    ]
+  },
+  "hr.talent@infosys.com": {
+    "id": "hr_muz7znnq",
+    "name": "Infosys Talent Lead",
+    "email": "hr.talent@infosys.com",
+    "phone": "+91 98765 43210",
+    "companyName": "Infosys",
+    "role": "hr",
+    "lastLoginAt": "2026-10-08T07:33:37.287Z",
+    "searchHistory": [
+      {
+        "id": "search_1791444818210_9n8p",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-08T07:33:38.210Z"
+      }
+    ],
+    "viewedCandidates": [],
+    "lastActiveDomain": "Software Developer",
+    "lastSearch": {
+      "id": "search_1791444818210_9n8p",
+      "domain": "Software Developer",
+      "domainId": "software-developer",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "score_desc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-08T07:33:38.210Z"
+    }
+  },
+  "hugu76@gmail.com": {
+    "id": "hr_muzcuqq1",
+    "name": "dhivi",
+    "email": "hugu76@gmail.com",
+    "phone": "09808786",
+    "companyName": "Globe",
+    "role": "hr",
+    "lastLoginAt": "2026-10-08T09:49:46.058Z",
+    "searchHistory": [
+      {
+        "id": "search_1791452987030_idu2",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-08T09:49:47.030Z"
+      }
+    ],
+    "viewedCandidates": [
+      {
+        "candidateId": "cand_muz4mu1w_pd06j",
+        "candidateName": "Gideonabisheks",
+        "category": "Full Stack Developer",
+        "viewedAt": "2026-10-08T09:49:57.678Z"
+      }
+    ],
+    "lastActiveDomain": "Software Developer",
+    "lastSearch": {
+      "id": "search_1791452987030_idu2",
+      "domain": "Software Developer",
+      "domainId": "software-developer",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "score_desc"
+      },
+      "resultsCount": 12,
+      "timestamp": "2026-10-08T09:49:47.030Z"
+    }
+  },
+  "vikas@gmail.com": {
+    "id": "hr_mv0jn4nt",
+    "name": "Vikas",
+    "email": "vikas@gmail.com",
+    "phone": "+918056897132",
+    "companyName": "TCS",
+    "role": "hr",
+    "lastLoginAt": "2026-10-12T06:31:58.448Z",
+    "searchHistory": [
+      {
+        "id": "search_1791792479625_96ay",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T08:07:59.625Z"
+      },
+      {
+        "id": "search_1791787210798_1ja3",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:40:10.798Z"
+      },
+      {
+        "id": "search_1791787206937_4xx6",
+        "domain": "UI/UX Designer",
+        "domainId": "ui-ux-designer",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:40:06.937Z"
+      },
+      {
+        "id": "search_1791787199429_dlp9",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:39:59.429Z"
+      },
+      {
+        "id": "search_1791787196569_71xn",
+        "domain": "Software Test Engineer",
+        "domainId": "software-test-engineer",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:39:56.569Z"
+      },
+      {
+        "id": "search_1791787192885_t1m3",
+        "domain": "Data Analytics",
+        "domainId": "data-analytics",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:39:52.885Z"
+      },
+      {
+        "id": "search_1791787189491_fzeq",
+        "domain": "AI/ML",
+        "domainId": "ai-ml",
+        "query": "react",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:39:49.491Z"
+      },
+      {
+        "id": "search_1791786963535_syvq",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 7,
+        "timestamp": "2026-10-12T06:36:03.535Z"
+      },
+      {
+        "id": "search_1791786953984_49v6",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "python",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 7,
+        "timestamp": "2026-10-12T06:35:53.984Z"
+      },
+      {
+        "id": "search_1791786950525_muzi",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "py",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T06:35:50.525Z"
+      },
+      {
+        "id": "search_1791786933396_2oqb",
+        "domain": "AI/ML",
+        "domainId": "ai-ml",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:35:33.396Z"
+      },
+      {
+        "id": "search_1791786931413_lnrw",
+        "domain": "Data Analytics",
+        "domainId": "data-analytics",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:35:31.413Z"
+      },
+      {
+        "id": "search_1791786929065_j9gp",
+        "domain": "Software Test Engineer",
+        "domainId": "software-test-engineer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:35:29.065Z"
+      },
+      {
+        "id": "search_1791786926756_bnb5",
+        "domain": "Cloud Engineer - AWS, Azure & GCP",
+        "domainId": "cloud-engineer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T06:35:26.756Z"
+      },
+      {
+        "id": "search_1791786923540_3o2m",
+        "domain": "UI/UX Designer",
+        "domainId": "ui-ux-designer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T06:35:23.540Z"
+      }
+    ],
+    "viewedCandidates": [
+      {
+        "candidateId": "cand_muz4mu1l_upsfh",
+        "candidateName": "Aryan Full Stack Developer",
+        "category": "Full Stack Developer",
+        "viewedAt": "2026-10-12T06:39:04.952Z"
+      }
+    ],
+    "shortlist": [],
+    "lastActiveDomain": "DevOps",
+    "lastSearch": {
+      "id": "search_1791792479625_96ay",
+      "domain": "DevOps",
+      "domainId": "devops",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "score_desc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-12T08:07:59.625Z"
+    }
+  },
+  "hr@google.com": {
+    "id": "hr_mv4yrgqz",
+    "name": "Sneha",
+    "email": "hr@google.com",
+    "phone": "9876543210",
+    "companyName": "Google",
+    "role": "hr",
+    "lastLoginAt": "2026-10-12T08:01:55.595Z",
+    "searchHistory": [
+      {
+        "id": "search_1791792127133_y34u",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T08:02:07.133Z"
+      }
+    ],
+    "viewedCandidates": [],
+    "shortlist": [
+      {
+        "id": "cand_muz4mu4a_ia18d",
+        "name": "Venkadesh",
+        "category": "Java Developer",
+        "email": "venkadesh@talenthub.org",
+        "phone": "+91 9857349231",
+        "experience": "Fresher (2024 Batch)",
+        "education": "B.E / B.Tech Computer Science (2024)",
+        "passingYear": 2024,
+        "location": "Bangalore",
+        "skills": [
+          "Core Java",
+          "Spring Boot",
+          "Microservices",
+          "Hibernate"
+        ],
+        "score": 98,
+        "rating": 5,
+        "status": "Available",
+        "availability": "Immediate (0 - 15 Days)",
+        "bio": "Certified Java Developer trained in industry standard best practices, scalable coding, and full project lifecycle. Completed 3 capstone projects and 100+ hours of problem solving.",
+        "filename": "Java_Developer_Venkadesh_Resume_132004.pdf",
+        "originalFilename": "Venkadesh Resume 132004.pdf",
+        "fileType": ".pdf",
+        "uploadedAt": "2026-10-08T05:59:40.282Z"
+      }
+    ],
+    "lastActiveDomain": "Software Developer",
+    "lastSearch": {
+      "id": "search_1791792127133_y34u",
+      "domain": "Software Developer",
+      "domainId": "software-developer",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "score_desc"
+      },
+      "resultsCount": 12,
+      "timestamp": "2026-10-12T08:02:07.133Z"
+    }
+  },
+  "rahul@gmail.com": {
+    "id": "hr_mv50cr3d",
+    "name": "rahul",
+    "email": "rahul@gmail.com",
+    "phone": "894094893",
+    "companyName": "globe",
+    "role": "hr",
+    "lastLoginAt": "2026-10-12T08:46:28.396Z",
+    "searchHistory": [
+      {
+        "id": "search_1791797356746_h10g",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T09:29:16.747Z"
+      },
+      {
+        "id": "search_1791794809067_xsag",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "Remote",
+          "sort": "name_asc"
+        },
+        "resultsCount": 5,
+        "timestamp": "2026-10-12T08:46:49.067Z"
+      },
+      {
+        "id": "search_1791794804980_k3z8",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "Bangalore",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T08:46:44.980Z"
+      },
+      {
+        "id": "search_1791794789436_kxgb",
+        "domain": "Software Developer",
+        "domainId": "software-developer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "score_desc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T08:46:29.436Z"
+      }
+    ],
+    "viewedCandidates": [],
+    "shortlist": [
+      {
+        "id": "cand_muz4mtzt_iez1f",
+        "name": "Athul",
+        "category": "Devops",
+        "email": "athul@talenthub.org",
+        "phone": "+91 9191053405",
+        "experience": "Fresher (2024 Batch)",
+        "education": "B.E / B.Tech Computer Science (2024)",
+        "passingYear": 2024,
+        "location": "Remote / Hybrid",
+        "skills": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "CI/CD Pipelines",
+          "Linux"
+        ],
+        "score": 94,
+        "rating": 4.9,
+        "status": "Available",
+        "availability": "Immediate (0 - 15 Days)",
+        "bio": "Certified Devops trained in industry standard best practices, scalable coding, and full project lifecycle. Completed 3 capstone projects and 100+ hours of problem solving.",
+        "filename": "Devops_athulresumelatest.pdf",
+        "originalFilename": "athulresumelatest.pdf",
+        "fileType": ".pdf",
+        "uploadedAt": "2026-10-08T05:59:40.121Z"
+      }
+    ],
+    "lastActiveDomain": "DevOps",
+    "lastSearch": {
+      "id": "search_1791797356746_h10g",
+      "domain": "DevOps",
+      "domainId": "devops",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "score_desc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-12T09:29:16.747Z"
+    }
+  },
+  "shalini09@gmail.com": {
+    "id": "hr_mv574rsa",
+    "name": "shalini",
+    "email": "shalini09@gmail.com",
+    "phone": "8783673423",
+    "companyName": "global",
+    "role": "hr",
+    "lastLoginAt": "2026-10-12T11:56:13.357Z",
+    "searchHistory": [
+      {
+        "id": "search_1791806210256_pti5",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "fresher",
+          "location": "Bangalore",
+          "sort": "name_asc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T11:56:50.256Z"
+      },
+      {
+        "id": "search_1791806206630_jb7r",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "fresher",
+          "location": "Chennai",
+          "sort": "name_asc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T11:56:46.630Z"
+      },
+      {
+        "id": "search_1791806203660_5h51",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "fresher",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T11:56:43.660Z"
+      },
+      {
+        "id": "search_1791806200181_o7s5",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "3+",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-12T11:56:40.181Z"
+      },
+      {
+        "id": "search_1791806197245_937t",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "1-3",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T11:56:37.245Z"
+      },
+      {
+        "id": "search_1791806174359_75nu",
+        "domain": "DevOps",
+        "domainId": "devops",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 12,
+        "timestamp": "2026-10-12T11:56:14.359Z"
+      }
+    ],
+    "viewedCandidates": [],
+    "shortlist": [],
+    "lastActiveDomain": "DevOps",
+    "lastSearch": {
+      "id": "search_1791806210256_pti5",
+      "domain": "DevOps",
+      "domainId": "devops",
+      "query": "",
+      "filters": {
+        "experience": "fresher",
+        "location": "Bangalore",
+        "sort": "name_asc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-12T11:56:50.256Z"
+    }
+  },
+  "navmbaiim@gmail.com": {
+    "id": "hr_mv57spe5",
+    "name": "naveen",
+    "email": "navmbaiim@gmail.com",
+    "phone": "9092576959",
+    "companyName": "tcs",
+    "role": "hr",
+    "lastLoginAt": "2026-10-12T12:19:06.755Z",
+    "searchHistory": [
+      {
+        "id": "search_1791868828734_a8yc",
+        "domain": "Data Analytics",
+        "domainId": "data-analytics",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-13T05:20:28.734Z"
+      },
+      {
+        "id": "search_1791807547726_2g3w",
+        "domain": "Data Analytics",
+        "domainId": "data-analytics",
+        "query": "",
+        "filters": {
+          "experience": "fresher",
+          "location": "Bangalore",
+          "sort": "name_asc"
+        },
+        "resultsCount": 3,
+        "timestamp": "2026-10-12T12:19:07.726Z"
+      }
+    ],
+    "viewedCandidates": [
+      {
+        "candidateId": "cand_mv0ic3zi_z7xqw",
+        "candidateName": "Aiswarya G Data Analyst",
+        "category": "Data Analyst",
+        "viewedAt": "2026-10-12T12:15:34.018Z"
+      }
+    ],
+    "shortlist": [],
+    "lastActiveDomain": "Data Analytics",
+    "lastSearch": {
+      "id": "search_1791868828734_a8yc",
+      "domain": "Data Analytics",
+      "domainId": "data-analytics",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "name_asc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-13T05:20:28.734Z"
+    }
+  },
+  "priya@infosys.com": {
+    "id": "hr_mv6d8cza",
+    "name": "Priya Sharma",
+    "email": "priya@infosys.com",
+    "phone": "+91 98765 43210",
+    "companyName": "Infosys",
+    "role": "hr",
+    "lastLoginAt": "2026-10-13T07:34:44.662Z",
+    "searchHistory": [
+      {
+        "id": "search_1792473243847_5mir",
+        "domain": "Software Test Engineer",
+        "domainId": "software-test-engineer",
+        "query": "",
+        "filters": {
+          "experience": "all",
+          "location": "all",
+          "sort": "name_asc"
+        },
+        "resultsCount": 0,
+        "timestamp": "2026-10-20T05:14:03.847Z"
+      }
+    ],
+    "viewedCandidates": [],
+    "shortlist": [],
+    "lastActiveDomain": "Software Test Engineer",
+    "lastSearch": {
+      "id": "search_1792473243847_5mir",
+      "domain": "Software Test Engineer",
+      "domainId": "software-test-engineer",
+      "query": "",
+      "filters": {
+        "experience": "all",
+        "location": "all",
+        "sort": "name_asc"
+      },
+      "resultsCount": 0,
+      "timestamp": "2026-10-20T05:14:03.847Z"
+    }
+  },
+  "gyavgva@gmail.com": {
+    "id": "hr_mvhr1d3f",
+    "name": "sharma",
+    "email": "gyavgva@gmail.com",
+    "phone": "+91 98765 43210",
+    "companyName": "TCS",
+    "role": "hr",
+    "lastLoginAt": "2026-10-21T09:24:47.881Z",
+    "searchHistory": [],
+    "viewedCandidates": [
+      {
+        "candidateId": "gm-c-9",
+        "id": "gm-c-9",
+        "candidateName": "Arjun Rao",
+        "name": "Arjun Rao",
+        "category": "Java Developer",
+        "experience": "1-2 Years",
+        "skills": [
+          "Java",
+          "MongoDB",
+          "REST"
+        ],
+        "filename": null,
+        "expectedCtc": "₹12-18 LPA",
+        "location": "Hyderabad",
+        "viewedAt": "2026-10-22T07:47:46.583Z"
+      },
+      {
+        "candidateId": "cand_muz4mu4j_xskxs",
+        "id": "cand_muz4mu4j_xskxs",
+        "candidateName": "Pranjal Mishra",
+        "name": "Pranjal Mishra",
+        "category": "Machine Learning",
+        "experience": "1-2 Years",
+        "skills": [
+          "Python",
+          "Scikit-learn",
+          "Deep Learning",
+          "Pandas",
+          "NumPy",
+          "Git",
+          "REST APIs",
+          "MongoDB"
+        ],
+        "filename": "Machine_Learning_Pranjal_Mishra_BTECH_CSIT_2026.pdf",
+        "expectedCtc": "₹12-18 LPA",
+        "location": "Delhi",
+        "viewedAt": "2026-10-21T09:37:19.584Z"
+      }
+    ],
+    "shortlist": [
+      {
+        "id": "gm-c-9",
+        "name": "Arjun Rao",
+        "location": "Hyderabad",
+        "experience": "1-2 Years",
+        "role": "Java & Backend Engineer",
+        "category": "Java Developer",
+        "skills": [
+          "Java",
+          "MongoDB",
+          "REST"
+        ]
+      }
+    ],
+    "lastActiveDomain": null,
+    "lastSearch": null
+  },
+  "fgdfg@gmail.com": {
+    "id": "hr_mvhus6ej",
+    "name": "scs",
+    "email": "fgdfg@gmail.com",
+    "phone": "98877898",
+    "companyName": "tcs",
+    "role": "hr",
+    "lastLoginAt": "2026-10-21T08:31:30.668Z",
+    "searchHistory": [],
+    "viewedCandidates": [],
+    "shortlist": [],
+    "lastActiveDomain": null,
+    "lastSearch": null
+  }
+}
